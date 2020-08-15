@@ -1,0 +1,23 @@
+{{#each albums as |album|}}
+  <div role="button" {{action "selectAlbum" album}}>
+    {{album.name}}
+  </div>
+{{/each}}
+
+{{#if selectedAlbum}}
+  {{#app-modal}}
+    <h1>{{selectedAlbum.name}} <a class="btn--close"role="button" {{action "selectAlbum" null}}> Close</a></h1>
+    <!-- <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aut
+      e irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exc
+      epteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p> -->
+    {{#each selectedAlbum.images as |image|}}
+      <div>
+        <img src={{image.imageUrl}}/>
+      </div>
+    {{/each}}
+  {{/app-modal}}
+{{/if}}

@@ -1,0 +1,7 @@
+{{#each navs as |nav|}}
+  <li>
+    {{#link-to nav.path}}
+      {{nav.label}}
+    {{/link-to}}
+  </li>
+{{/each}}

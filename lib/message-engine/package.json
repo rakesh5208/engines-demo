@@ -1,0 +1,17 @@
+{
+  "name": "message-engine",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "*",
+    "ember-cli-babel": "*",
+    "ember-data": "*"
+  },
+  "ember-addon": {
+    "paths": [
+      "../shared-modules"
+    ]
+  }
+}

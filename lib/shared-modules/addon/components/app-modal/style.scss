@@ -1,0 +1,17 @@
+.modal-overlay-conatiner {
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0, .5);
+  .modal-container {
+    background: white;
+    width: 500px;
+    margin: 120px auto;
+    padding: 16px;
+    border-radius: 4px;
+    height: 300px;
+    overflow: auto;
+  }
+}

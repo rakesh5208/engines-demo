@@ -1,0 +1,14 @@
+.btn {
+  &--close{
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    color: blue;
+    cursor: pointer;
+  }
+}
+.modal-container{
+  width: 550px !important;
+  height: 400px !important;
+}

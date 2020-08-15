@@ -1,0 +1,11 @@
+.avatar-container{
+  &--alt-avt {
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #d3d3d3;
+    padding: 8px;
+  }
+  .full-name {
+    display: inline-block;
+  }
+}

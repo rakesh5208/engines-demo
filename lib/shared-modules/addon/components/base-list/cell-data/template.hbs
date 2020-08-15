@@ -1,0 +1,7 @@
+<td width={{width}}>
+  {{#if column.dataComponent}}
+    {{component column.dataComponent value = (get data column.key)}}
+  {{else}}
+    {{get data column.key}}
+  {{/if}}
+</td>

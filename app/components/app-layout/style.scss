@@ -1,0 +1,29 @@
+.app-container {
+  height: 100vh;
+  &--header {
+    font-size: 18px;
+    font-weight: 500;
+    background: #51518e;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        display: inline-block;
+        padding: 12px;
+        a {
+          color: orange;
+          text-decoration: none;
+          &.active {
+            color: white;
+          }
+        }
+        &:hover {
+          background: #4b4b67;
+        }
+      }
+    }
+  }
+  &--body {
+    padding: 16px;
+  }
+}

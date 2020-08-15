@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      {{#each columns as |column|}}
+        {{base-list/cell-header column = column}}
+      {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#each datas as |data|}}
+      <tr>
+        {{#each columns as |column|}}
+          {{base-list/cell-data column = column data = data}}
+        {{/each}}
+
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
